@@ -6,7 +6,7 @@ def main():
     amtWords = get_num_words(bookText)
     charCount = get_char_count(bookText)
     orderedCount = order_char_count(charCount)
-    
+
     print("============ BOOKBOT ============")
     print("Analyzing book found at books/frankenstein.txt...")
     print("----------- Word Count ----------")
@@ -15,7 +15,8 @@ def main():
     for item in orderedCount:
         print(item)
     print("============= END ===============")
-
+   
+    
 main()
 
 
