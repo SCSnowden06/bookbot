@@ -10,8 +10,6 @@ def main():
     charCount = get_char_count(bookText)
     orderedCount = order_char_count(charCount)
 
-    print(f"Usage: python3 main.py <{args[1]}>\n")
-
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at '{args[1]}'...")
     print("----------- Word Count ----------")
@@ -20,8 +18,19 @@ def main():
     for item in orderedCount:
         print(item)
     print("============= END ===============")
-   
     
-main()
 
+#if len(args) != 2:
+    #print(f"Usage: python3 main.py <{args[1]}>\n")
+    #sys.exit(1)
+    #print('this is working')
+#else:
+    #main()
+
+if len(args) == 2:
+    main()
+    sys.exit(0)
+else:
+    print(f"Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
 
