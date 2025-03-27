@@ -1,18 +1,18 @@
-def get_book_text(filePath):
-    with open(filePath, "r") as f:
-        fileContents = f.read()
-    return fileContents
+def get_book_text(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        file_contents = f.read()
+    return file_contents
 
 
 def get_num_words(text):
     words = text.split()
-    amountItems = len(words)
-    return amountItems
+    amount_items = len(words)
+    return amount_items
 
 
 def get_num_char(text):
-    amountChar = len(text)
-    return amountChar
+    amount_char = len(text)
+    return amount_char
 
 
 def get_char_count(text):
